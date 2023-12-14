@@ -17,7 +17,7 @@ gcc manipuladorUDP.c -o manipuladorUDP
 ./manipuladorUDP 
 
 # Inicia o gerador para envio de pacotes com os parâmetros
-./manipulador tempo média destino
+./gerador tempo média destino
 
 Tempo: duração do experimento
 Média: média para a distribuição de poisson que define quantos pacotes em média serão enviados por segundo
