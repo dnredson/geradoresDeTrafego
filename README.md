@@ -7,6 +7,7 @@ Neste repositório estão disponíveis:
 Geradores de tráfego UDP (Linux)
 Geradores de tráfego UDP (Windows)
 Geradores de tráfego TCP 
+Geradores de tráfego MQTT
 
 A utilização de todos os geradores ocorre da mesma forma:
 #Compilação para linux e exemplo
@@ -30,3 +31,15 @@ D| 5  \\ indica delay de 5 milisegundos
 Para armazenamento das saídas, utilizar o padrão do sistema operacional >>
 Ex:
 ./manipulador >> saida.log
+
+# Para o gerador MQTT foi utilizado o node pois as biblitecas MQTT disponíveis para python geram conflitos com versões mais recentes do python
+Instalar o Nodejs
+instalar os pacotes necessários: 
+sudo npm install mqtt
+
+#Utilizando o gerador MQTT
+Inicie primeiro o receptor:
+node manipuladorMQTT.js <endereco_broker> <tópico>
+
+Inicie o gerador:
+node geradorMQTT.js <endereco_broker> <tópico> <mensagens_segundo> <duracao>
