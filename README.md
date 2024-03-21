@@ -35,13 +35,22 @@ Ex:
 # Gerador MQTT
 
 Para o gerador MQTT foi utilizado o node pois as biblitecas MQTT disponíveis para python geram conflitos com versões mais recentes do python
+
+
 Instalar o Nodejs
+
 instalar os pacotes necessários: 
+
 sudo npm install mqtt
 
+
 #Utilizando o gerador MQTT
+
 Inicie primeiro o receptor:
+
 node manipuladorMQTT.js <endereco_broker> <tópico>
 
+
 Inicie o gerador:
+
 node geradorMQTT.js <endereco_broker> <tópico> <mensagens_segundo> <duracao>
