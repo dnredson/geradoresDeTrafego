@@ -32,7 +32,9 @@ Para armazenamento das saídas, utilizar o padrão do sistema operacional >>
 Ex:
 ./manipulador >> saida.log
 
-# Para o gerador MQTT foi utilizado o node pois as biblitecas MQTT disponíveis para python geram conflitos com versões mais recentes do python
+# Gerador MQTT
+
+Para o gerador MQTT foi utilizado o node pois as biblitecas MQTT disponíveis para python geram conflitos com versões mais recentes do python
 Instalar o Nodejs
 instalar os pacotes necessários: 
 sudo npm install mqtt
