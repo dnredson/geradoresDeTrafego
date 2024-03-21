@@ -1,7 +1,7 @@
 Os geradores de tráfego permitem a criação de tráfego sintético para simulação de cenários reais e análise de delays. 
 Cada versão do gerador de tráfego é capaz de produzir pacotes com timestamp em milisegundos do momento da criação do pacote. Os pacotes são recebidos por um manipulador que irá coletar o timestamp do momento de recebimento do pacote e mostrar a diferença.
 
-Todos os simuladores foram desenvolvidos em C, operando por padrão na porta 12345 e geram tráfego com chegada obedecendo a distribuição de poisson.
+Todos os simuladores foram desenvolvidos em C e js, operando por padrão na porta 12345 e geram tráfego com chegada obedecendo a distribuição de poisson.
 Neste repositório estão disponíveis:
 
 Geradores de tráfego UDP (Linux)
