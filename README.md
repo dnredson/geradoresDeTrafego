@@ -53,7 +53,9 @@ Ex:
 
 ./manipulador >> saida.log
 
-#Gerador HTTP
+
+# Gerador HTTP
+
 O gerador HTTP permite que se defina o cabeçalho Content-type, que deve ser passado como parâmetro. Compilação do gerador e manipulador são as mesmas dos demais códigos em c.
 
 Exemplo de utilização para o gerador HTTP:
