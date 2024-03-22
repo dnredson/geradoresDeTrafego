@@ -100,7 +100,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    if (listen(server_socket, 10) == -1) { // Backlog set to 10
+    if (listen(server_socket, 10) == -1) { 
         perror("Error listening");
         exit(EXIT_FAILURE);
     }
@@ -125,11 +125,11 @@ int main() {
             free(new_sock);
         }
 
-               // Detach the newly created thread to allow it to run independently
+               
         pthread_detach(thread_id);
     }
 
-    // Close the server socket
+    
     close(server_socket);
 
     return 0;
