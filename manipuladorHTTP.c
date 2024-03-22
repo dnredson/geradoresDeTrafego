@@ -105,9 +105,10 @@ int main() {
         uint64_t current_timestamp_milliseconds = get_current_time_milliseconds();
         int delay = (int)(current_timestamp_milliseconds - host_order_payload);
 
-        printf("Received Timestamp: %" PRIu64 "\n", host_order_payload);
-        printf("Current Timestamp: %" PRIu64 "\n", current_timestamp_milliseconds);
-        printf("Delay: %d ms\n", delay);
+        //printf("Received Timestamp: %" PRIu64 "\n", host_order_payload);
+        //printf("Current Timestamp: %" PRIu64 "\n", current_timestamp_milliseconds);
+        //printf("Delay: %d ms\n", delay);
+        printf("D| %d \n", delay);
     }
 
     close(client_socket);
