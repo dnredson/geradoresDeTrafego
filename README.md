@@ -15,12 +15,14 @@ Geradores de tráfego TCP
 
 Geradores de tráfego MQTT
 
+Geradores de tráfego em formato XML
+
 
 A utilização de todos os geradores ocorre da mesma forma:
 
 #Compilação para linux e exemplo
 
-gcc geradorUDP.c -o geradorUDP
+gcc geradorUDP.c -o geradorUDP -lm
 
 gcc manipuladorUDP.c -o manipuladorUDP
 
@@ -52,6 +54,15 @@ Ex:
 ./manipulador >> saida.log
 
 
+# Gerador HTTP
+
+O gerador HTTP permite que se defina o cabeçalho Content-type, que deve ser passado como parâmetro. Compilação do gerador e manipulador são as mesmas dos demais códigos em c.
+
+Exemplo de utilização para o gerador HTTP:
+
+./geradorHTTP <duracao_em_segundos> <mensagens_por_segundo> <ip_destino> <content-type>
+
+
 # Gerador MQTT
 
 Para o gerador MQTT foi utilizado o node pois as biblitecas MQTT disponíveis para python geram conflitos com versões mais recentes do python
@@ -74,3 +85,5 @@ node manipuladorMQTT.js <endereco_broker> <tópico>
 Inicie o gerador:
 
 node geradorMQTT.js <endereco_broker> <tópico> <mensagens_segundo> <duracao>
+
+
